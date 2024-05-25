@@ -1,4 +1,4 @@
-name: Deploy frontend-udemy-cicd-merntypescript-docker
+name: frontend-bareminimum-docker-cicd
 
 on:
   push:
@@ -54,5 +54,5 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 3000:80 --name bareminimum-frontend-container \
+          docker run -d -p 3000:3000 --name bareminimum-frontend-container \
             shakilpro/bareminimum-mern-frontend:latest
