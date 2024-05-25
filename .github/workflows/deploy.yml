@@ -28,7 +28,7 @@ jobs:
       - name: Build Docker Image lets try
         run: docker build -t shakilpro/bareminimum-mern-frontend:latest .
 
-      - name: Push Docker Image to Docker Hub
+      - name: Push Docker Image to Docker Hub lets try
         run: |
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
           docker push shakilpro/bareminimum-mern-frontend:latest
